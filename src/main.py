@@ -49,11 +49,31 @@ async def get_imp_docs(browser,page):
     table = await page3.querySelector('table[id="ContentPlaceHolder1_grvDocument"]')
     rows = await table.querySelectorAll('td')
     a_tags = await table.querySelectorAll('a')
+    # for some reason the below way feels like shit later on modify and improve this
+    count = 0
+    list_ = []
     for row in rows:
-        row_content = await page3.evaluate('(element) => element.innerHTML', row)
-        print(row_content)
-
-    
+        if count % 2 == 0:
+            count += 1
+            continue
+        # elif count > 6:
+        #     break
+        else: 
+            rrow_content = await page3.evaluate('(element) => element.innerHTML', row)
+            rrow_content = rrow_content.strip()
+            while '<a' in rrow_content and '</a>' in rrow_content:
+                rrow_content = rrow_content[:(rrow_content.index('<a'))] + rrow_content[(rrow_content.index('</a>'))+len('</a>')-1:]
+            # print(rrow_content)
+            # list.push(rrow_content)
+            list_.append(rrow_content)
+    for i in range(len(list_)-1, -1, -1):
+        li = list_[i]
+        if len(li) < 3 or '<td>></td>' in li or '<span>1</span>' in li:
+            list_.pop(i)
+        else:
+            continue
+    print(list_)
+    print(len(list_)) #its 10 perfect
 
 async def main():
     browser = await launch({"headless": False, "args": ["--start-maximized"]})

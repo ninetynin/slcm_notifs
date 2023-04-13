@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import asyncio
 from pyppeteer import launch
 import keras_ocr
+import csv
 
 def setup_env():
     load_dotenv()
@@ -74,11 +75,39 @@ async def get_imp_docs(browser,page):
             continue
     print(list_)
     print(len(list_)) #its 10 perfect
+    return list_,page3
+
+def set_ones_or_zeroes_in_csv(list_,csv_file_path):
+    new_list = [] #contains only the ones that are set to 1
+
+    with open(csv_file_path, 'r') as f:
+        csv_reader = csv.reader(f)
+        csv_rows = list(csv_reader) 
+    for li in list_:
+        is_present = False 
+        for row in csv_rows:
+            if row[0] == li:  
+                is_present = True
+                row[1] = '0'  
+                break
+
+        if not is_present:
+            new_list.append(li)
+            csv_rows.append([li, '1']) # doing outside for loop on puprose to not repeat over and over again
+
+    with open(csv_file_path, 'w', newline='') as f:
+        csv_writer = csv.writer(f)
+        csv_writer.writerows(csv_rows)  # Write the updated rows back to the csv file
+
+    return new_list
 
 async def main():
     browser = await launch({"headless": False, "args": ["--start-maximized"]})
     page = await login(browser)
-    await get_imp_docs(browser,page)
+    imp_docs,page = await get_imp_docs(browser,page)
+    imp_docs_path = os.path.join(os.path.dirname(__file__), '../data/important-documents.csv')
+    csv_imp_docs(imp_docs,imp_docs_path)
+    # if any value in csv is set to 1 then it will be published in insta
     while True:
         #do nothing
         pass

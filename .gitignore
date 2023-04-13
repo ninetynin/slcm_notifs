@@ -1,7 +1,4 @@
 env
 .env
-# .env.*
-dumps
-tests
 GenerateCaptcha.*
 tempCodeRunnerFile.py

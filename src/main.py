@@ -4,12 +4,44 @@ import asyncio
 from pyppeteer import launch
 import keras_ocr
 import csv
+from instagrapi import Client # there's a heavy chance this might be broken in future then find a alternative
+from PIL import Image, ImageDraw, ImageFont, ImageColor
+
+
+load_dotenv()
 
 def setup_env():
-    load_dotenv()
     SLCM_USERNAME = os.getenv("SLCM_USERNAME")
     SLCM_PASSWORD = os.getenv("SLCM_PASSWORD")
     return SLCM_USERNAME, SLCM_PASSWORD
+
+def setup_insta_env():
+    INSTA_USERNAME = os.getenv("INSTAGRAM_USERNAME")
+    INSTA_PASSWORD = os.getenv("INSTAGRAM_PASSWORD")
+    return INSTA_USERNAME, INSTA_PASSWORD
+
+def login_insta():
+    INSTA_USERNAME, INSTA_PASSWORD = setup_insta_env()
+    cl = Client()
+    cl.login(INSTA_USERNAME, INSTA_PASSWORD)
+    return cl
+
+def post_story(new_list):
+    # bg_path = '../images/insta_bg_template.png'
+    # abs_bg_path = os.path.join(os.path.dirname(__file__), bg_path)
+    cl = login_insta()
+    print('logged in')
+    for li in new_list:
+        img = Image.new(mode="RGBA", size=(720, 1280), color=(25, 25, 25, 1))
+        draw = ImageDraw.Draw(img)
+        img.save('images/dumps/insta_dump.png')
+        # li_width, li_height = draw.textsize(li)
+        # draw.text(((720-li_width)/2, (1280-li_height)/2), li, fill="#ffffff")
+        draw.text((500,500),li,fill='white')
+        img.save('images/dumps/insta_dump.png')
+        # cl.photo_upload_to_story('/app/image.jpg')
+        cl.photo_upload_to_story('images/dumps/insta_dump.png')
+        print('set :' + li)
 
 async def decode_captcha(img_path):
     pipeline = keras_ocr.pipeline.Pipeline()
@@ -97,20 +129,24 @@ def set_ones_or_zeroes_in_csv(list_,csv_file_path):
 
     with open(csv_file_path, 'w', newline='') as f:
         csv_writer = csv.writer(f)
-        csv_writer.writerows(csv_rows)  # Write the updated rows back to the csv file
+        csv_writer.writerows(csv_rows)
 
     return new_list
 
 async def main():
-    browser = await launch({"headless": False, "args": ["--start-maximized"]})
+    #print('starting main test')
+    #browser = await launch({"headless": False, "args": ["--start-maximized"]})
+    browser = await launch()
     page = await login(browser)
     imp_docs,page = await get_imp_docs(browser,page)
     imp_docs_path = os.path.join(os.path.dirname(__file__), '../data/important-documents.csv')
-    csv_imp_docs(imp_docs,imp_docs_path)
+    new_list = set_ones_or_zeroes_in_csv(imp_docs,imp_docs_path)
     # if any value in csv is set to 1 then it will be published in insta
-    while True:
-        #do nothing
-        pass
+    if len(new_list) > 0:
+        post_story(new_list)
+    # while True:
+    #     #do nothing
+    #     pass
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())

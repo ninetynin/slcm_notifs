@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '0 0 * * *' # every day at 00:00 check crontab.guru
+    - cron: '50 13 * * *' # every day at 13:50 check crontab.guru
 
 jobs:
   build:
@@ -24,7 +24,6 @@ jobs:
           INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
           INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
         run: python main.py
-        #idk if the below lines are necessary recheck later on
       - name: commit files
         run: |
           git config --local user.email "action@github.com"

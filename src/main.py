@@ -119,6 +119,7 @@ async def decode_captcha(img_path):
     for text, box in pipeline.recognize([img])[0]:
         # print(text)
         # logger.info('captcha decoded')
+        pass  #retarded compiler
     return text
 
 async def login(browser):

@@ -2,21 +2,26 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '50 13 * * *' # every day at 13:50 check crontab.guru
+    - cron: '* * * * *' # every day at 13:50 check crontab.guru
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
           python-version: '3.9'
+      
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      
       - name: Run main.py
         env:
           SLCM_USERNAME: ${{ secrets.SLCM_USERNAME }}
@@ -24,6 +29,7 @@ jobs:
           INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
           INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
         run: python main.py
+      
       - name: commit files
         run: |
           git config --local user.email "action@github.com"
@@ -35,4 +41,5 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main 
+          # branch: main 
+          branch: master

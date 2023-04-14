@@ -1,0 +1,14 @@
+# name: Set Session Environment Variable
+
+# on: [push]
+
+# jobs:
+#   set-session-env:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v2
+
+#       - name: Set session environment variable
+#         run: echo ::set-env name=SESSION_JSON::$(cat session.json)

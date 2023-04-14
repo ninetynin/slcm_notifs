@@ -8,8 +8,10 @@ from instagrapi import Client # there's a heavy chance this might be broken in f
 from PIL import Image, ImageDraw, ImageFont, ImageColor
 import logging
 
+#disabling logging and printing as it takes too much time ing github actions but not sure if thats the reason
+
 load_dotenv()
-logger = logging.getLogger()
+# logger = logging.getLogger()
 
 def setup_env():
     SLCM_USERNAME = os.getenv("SLCM_USERNAME")
@@ -37,7 +39,8 @@ def login_insta():
             try:
                 cl.get_timeline_feed()
             except login_required:
-                logger.info("Session expired")
+                # logger.info("Session expired")
+                # print  
                 old_session = cl.get_settings()
                 # use the same device uuids across logins
                 cl.set_settings({})
@@ -45,7 +48,7 @@ def login_insta():
                 cl.login(INSTA_USERNAME, INSTA_PASSWORD)
                 login_via_session = True
         except Exception as e:
-            logger.info("Session expired")
+            # logger.info("Session expired")
     
     if not login_via_session:
         try:
@@ -53,7 +56,7 @@ def login_insta():
                 login_via_pw = True
                 cl.dump_settings("session.json")
         except Exception as e:
-            logger.info("Login failed with password")
+            # logger.info("Login failed with password")
 
     if not login_via_pw and not login_via_session:
         raise Exception("Couldn't login user with either password or session")
@@ -62,7 +65,7 @@ def login_insta():
 
 def post_story(new_list):
     cl = login_insta()
-    logger.info('logged in')
+    # logger.info('logged in')
     for li in new_list:
         img = Image.new(mode="RGBA", size=(720, 1280), color='black')
         draw = ImageDraw.Draw(img)
@@ -104,7 +107,7 @@ def post_story(new_list):
         path = 'images/dumps/insta_dump.jpg'
         cl.photo_upload_to_story(path)
 
-        logger.info('story posted')
+        # logger.info('story posted')
 
 
 async def decode_captcha(img_path):
@@ -112,7 +115,7 @@ async def decode_captcha(img_path):
     img = keras_ocr.tools.read(img_path)
     for text, box in pipeline.recognize([img])[0]:
         # print(text)
-        logger.info('captcha decoded')
+        # logger.info('captcha decoded')
     return text
 
 async def login(browser):
@@ -171,7 +174,7 @@ async def get_imp_docs(browser,page):
             continue
     # print(list_)
     # print(len(list_)) #its 10 perfect
-    logger.info("important_documents list extracted")
+    # logger.info("important_documents list extracted")
     return list_,page3
 
 def set_ones_or_zeroes_in_csv(list_,csv_file_path):
@@ -199,15 +202,16 @@ def set_ones_or_zeroes_in_csv(list_,csv_file_path):
     return new_list
 
 async def main():
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-        datefmt='%Y-%m-%d %H:%M:%S',
-        filename='logs/logs.log'
-    )
+    # logging.basicConfig(
+    #     level=logging.INFO,
+    #     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    #     datefmt='%Y-%m-%d %H:%M:%S',
+    #     filename='logs/logs.log'
+    # )
     #print('starting main test')
     #browser = await launch({"headless": False, "args": ["--start-maximized"]})
-    browser = await launch()
+    # browser = await launch()
+    browser = await launch(headless=True)
     page = await login(browser)
     imp_docs,page = await get_imp_docs(browser,page)
     imp_docs_path = os.path.join(os.path.dirname(__file__), '../data/important-documents.csv')

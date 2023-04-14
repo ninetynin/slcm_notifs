@@ -28,7 +28,7 @@ jobs:
           SLCM_PASSWORD: ${{ secrets.SLCM_PASSWORD }}
           INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
           INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
-        run: python main.py
+        run: python -u src/main.py
       
       - name: commit files
         run: |

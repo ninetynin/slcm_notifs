@@ -7,6 +7,7 @@ import csv
 from instagrapi import Client # there's a heavy chance this might be broken in future then find a alternative
 from PIL import Image, ImageDraw, ImageFont, ImageColor
 import logging
+import requests
 
 #disabling logging and printing as it takes too much time ing github actions but not sure if thats the reason
 

@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '* * * * *' # every day at 13:50 check crontab.guru
+    - cron: '0 0 * * *' # every day at 13:50 check crontab.guru
 
 jobs:
   build:

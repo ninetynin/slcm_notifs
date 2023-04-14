@@ -6,9 +6,10 @@ import keras_ocr
 import csv
 from instagrapi import Client # there's a heavy chance this might be broken in future then find a alternative
 from PIL import Image, ImageDraw, ImageFont, ImageColor
-
+import logging
 
 load_dotenv()
+logger = logging.getLogger()
 
 def setup_env():
     SLCM_USERNAME = os.getenv("SLCM_USERNAME")
@@ -23,32 +24,95 @@ def setup_insta_env():
 def login_insta():
     INSTA_USERNAME, INSTA_PASSWORD = setup_insta_env()
     cl = Client()
-    cl.login(INSTA_USERNAME, INSTA_PASSWORD)
+    session = cl.load_settings("session.json")
+
+    login_via_session = False
+    login_via_pw = False
+
+    if session:
+        try:
+            cl.set_settings(session)
+            c1.login(INSTA_USERNAME,INSTA_PASSWORD)
+
+            try:
+                cl.get_timeline_feed()
+            except login_required:
+                logger.info("Session expired")
+                old_session = cl.get_settings()
+                # use the same device uuids across logins
+                cl.set_settings({})
+                cl.set_uuids(old_session["uuids"])
+                cl.login(INSTA_USERNAME, INSTA_PASSWORD)
+            login_via_session = True
+        except Exception as e:
+            logger.info("Session expired")
+    
+    if not login_via_session:
+        try:
+            logger.info("Attempting to login via username and password. username: %s" % USERNAME)
+            if cl.login(INSTA_USERNAME, INSTA_PASSWORD):
+                login_via_pw = True
+        except Exception as e:
+            logger.info("Couldn't login user using username and password: %s" % e)
+
+    if not login_via_pw and not login_via_session:
+        raise Exception("Couldn't login user with either password or session")
+    # cl.login(INSTA_USERNAME, INSTA_PASSWORD)
     return cl
 
 def post_story(new_list):
-    # bg_path = '../images/insta_bg_template.png'
-    # abs_bg_path = os.path.join(os.path.dirname(__file__), bg_path)
     cl = login_insta()
-    print('logged in')
+    logger.info('logged in')
     for li in new_list:
-        img = Image.new(mode="RGBA", size=(720, 1280), color=(25, 25, 25, 1))
+        img = Image.new(mode="RGBA", size=(720, 1280), color='black')
         draw = ImageDraw.Draw(img)
+        count = 0
+
+        if len(li) > 22:
+            lines = [li[i:i+22] for i in range(0, len(li), 22)]
+            text = "\n".join(lines)
+            count += 1
+        
+        if count == 0:
+            font = ImageFont.truetype('fonts/Lora-Medium.ttf', 50)
+        else:
+            for i in range(count):
+                font = ImageFont.truetype('fonts/Lora-Medium.ttf', 50 - (i*10))  
+        
+        text_bbox = draw.textbbox((0, 0), text, font=font)
+        wd = text_bbox[2] - text_bbox[0]
+        ht = text_bbox[3] - text_bbox[1]
+        draw.text(((720-wd)/2, (1080-ht)/2), text, fill='white', font=font)
+
+        automated_text = "Automated post"
+        atmt_post_text_bbox = draw.textbbox((0, 0), automated_text, font=font)
+        wd = atmt_post_text_bbox[2] - atmt_post_text_bbox[0]
+        ht = atmt_post_text_bbox[3] - atmt_post_text_bbox[1]
+        font = ImageFont.truetype('fonts/Lora-Medium.ttf', 20)
+        draw.text(((720-wd)*1.5, 1080-ht-30), automated_text, fill='white', font=font)
+
+        notice_text = "NEW NOTIFICATION"
+        notice_text_bbox = draw.textbbox((0, 0), notice_text, font=font)
+        wd = notice_text_bbox[2] - notice_text_bbox[0]
+        ht = notice_text_bbox[3] - notice_text_bbox[1]
+        font = ImageFont.truetype('fonts/Lora-Medium.ttf', 40)
+        draw.text(((720-wd+50)/4, 250), notice_text, fill='white', font=font)
+
         img.save('images/dumps/insta_dump.png')
-        # li_width, li_height = draw.textsize(li)
-        # draw.text(((720-li_width)/2, (1280-li_height)/2), li, fill="#ffffff")
-        draw.text((500,500),li,fill='white')
-        img.save('images/dumps/insta_dump.png')
-        # cl.photo_upload_to_story('/app/image.jpg')
-        cl.photo_upload_to_story('images/dumps/insta_dump.png')
-        print('set :' + li)
+        png_img = Image.open('images/dumps/insta_dump.png')
+        png_img.convert("RGB").save('images/dumps/insta_dump.jpg')
+        path = 'images/dumps/insta_dump.jpg'
+        cl.photo_upload_to_story(path)
+
+        logger.info('story posted')
+
 
 async def decode_captcha(img_path):
     pipeline = keras_ocr.pipeline.Pipeline()
     img = keras_ocr.tools.read(img_path)
     for text, box in pipeline.recognize([img])[0]:
-        # print(text, box)
-        print(text)
+        # print(text)
+        logger.info('captcha decoded')
     return text
 
 async def login(browser):
@@ -105,8 +169,9 @@ async def get_imp_docs(browser,page):
             list_.pop(i)
         else:
             continue
-    print(list_)
-    print(len(list_)) #its 10 perfect
+    # print(list_)
+    # print(len(list_)) #its 10 perfect
+    logger.info("important_documents list extracted")
     return list_,page3
 
 def set_ones_or_zeroes_in_csv(list_,csv_file_path):

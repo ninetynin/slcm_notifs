@@ -1,0 +1,64 @@
+2023-04-14 07:58:04 - pyppeteer.launcher - INFO - Browser listening on: ws://127.0.0.1:51263/devtools/browser/5411b29d-38c1-4e44-9ed0-2e0536e22faa
+2023-04-14 07:58:22 - root - INFO - captcha decoded
+2023-04-14 07:58:25 - root - INFO - important_documents list extracted
+2023-04-14 07:58:25 - root - INFO - Session expired
+2023-04-14 07:58:25 - root - INFO - Couldn't login user using username and password: name 'USERNAME' is not defined
+2023-04-14 07:58:25 - pyppeteer.launcher - INFO - terminate chrome process...
+2023-04-14 08:01:04 - pyppeteer.launcher - INFO - Browser listening on: ws://127.0.0.1:51305/devtools/browser/4eb55655-08ca-4177-a5e9-e353c41d76e8
+2023-04-14 08:01:19 - root - INFO - captcha decoded
+2023-04-14 08:01:23 - root - INFO - important_documents list extracted
+2023-04-14 08:01:23 - pyppeteer.launcher - INFO - terminate chrome process...
+2023-04-14 08:03:50 - pyppeteer.launcher - INFO - Browser listening on: ws://127.0.0.1:51370/devtools/browser/3130fdcc-ef44-422a-8036-053f686a8711
+2023-04-14 08:04:07 - root - INFO - captcha decoded
+2023-04-14 08:04:10 - root - INFO - important_documents list extracted
+2023-04-14 08:04:10 - root - INFO - Session expired
+2023-04-14 08:04:10 - root - INFO - logged in
+2023-04-14 08:04:12 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/rupload_igphoto/1681439651129_0_4618508537 (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:04:20 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/media/configure_to_story/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:04:21 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/qe/expose/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:04:21 - root - INFO - story posted
+2023-04-14 08:04:23 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/rupload_igphoto/1681439662083_0_9179129743 (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:04:31 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/media/configure_to_story/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:04:33 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/qe/expose/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:04:33 - root - INFO - story posted
+2023-04-14 08:04:34 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/rupload_igphoto/1681439673250_0_2864514609 (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:04:42 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/media/configure_to_story/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:04:43 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/qe/expose/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:04:43 - root - INFO - story posted
+2023-04-14 08:04:44 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/rupload_igphoto/1681439683826_0_3195502829 (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:04:53 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/media/configure_to_story/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:04:54 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/qe/expose/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:04:54 - root - INFO - story posted
+2023-04-14 08:04:55 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/rupload_igphoto/1681439694841_0_2776854069 (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:03 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/media/configure_to_story/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:05 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/qe/expose/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:05 - root - INFO - story posted
+2023-04-14 08:05:06 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/rupload_igphoto/1681439705231_0_7423085059 (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:14 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/media/configure_to_story/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:15 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/qe/expose/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:15 - root - INFO - story posted
+2023-04-14 08:05:16 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/rupload_igphoto/1681439715814_0_1836948997 (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:26 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/media/configure_to_story/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:27 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/qe/expose/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:27 - root - INFO - story posted
+2023-04-14 08:05:29 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/rupload_igphoto/1681439727417_0_6558862878 (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:37 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/media/configure_to_story/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:38 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/qe/expose/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:38 - root - INFO - story posted
+2023-04-14 08:05:39 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/rupload_igphoto/1681439738834_0_4969354422 (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:47 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/media/configure_to_story/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:49 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/qe/expose/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:49 - root - INFO - story posted
+2023-04-14 08:05:50 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/rupload_igphoto/1681439749375_0_8712429992 (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:05:59 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/media/configure_to_story/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:06:00 - private_request - INFO - slcm.notifications [200] POST https://i.instagram.com/api/v1/qe/expose/ (269.0.0.18.75, OnePlus 6T Dev)
+2023-04-14 08:06:00 - root - INFO - story posted
+2023-04-14 08:06:00 - pyppeteer.launcher - INFO - terminate chrome process...
+2023-04-14 08:06:00 - asyncio - ERROR - Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\anand\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\anand\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host

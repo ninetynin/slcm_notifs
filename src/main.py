@@ -43,21 +43,21 @@ def login_insta():
                 cl.set_settings({})
                 cl.set_uuids(old_session["uuids"])
                 cl.login(INSTA_USERNAME, INSTA_PASSWORD)
-            login_via_session = True
+                login_via_session = True
         except Exception as e:
             logger.info("Session expired")
     
     if not login_via_session:
         try:
-            logger.info("Attempting to login via username and password. username: %s" % USERNAME)
             if cl.login(INSTA_USERNAME, INSTA_PASSWORD):
                 login_via_pw = True
+                cl.dump_settings("session.json")
         except Exception as e:
-            logger.info("Couldn't login user using username and password: %s" % e)
+            logger.info("Login failed with password")
 
     if not login_via_pw and not login_via_session:
         raise Exception("Couldn't login user with either password or session")
-    # cl.login(INSTA_USERNAME, INSTA_PASSWORD)
+    
     return cl
 
 def post_story(new_list):
@@ -199,6 +199,12 @@ def set_ones_or_zeroes_in_csv(list_,csv_file_path):
     return new_list
 
 async def main():
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S',
+        filename='logs/logs.log'
+    )
     #print('starting main test')
     #browser = await launch({"headless": False, "args": ["--start-maximized"]})
     browser = await launch()

@@ -49,6 +49,8 @@ def login_insta():
                 login_via_session = True
         except Exception as e:
             # logger.info("Session expired")
+            pass
+        #seriously wtf is this syntax
     
     if not login_via_session:
         try:
@@ -57,7 +59,8 @@ def login_insta():
                 cl.dump_settings("session.json")
         except Exception as e:
             # logger.info("Login failed with password")
-
+            pass
+ 
     if not login_via_pw and not login_via_session:
         raise Exception("Couldn't login user with either password or session")
     

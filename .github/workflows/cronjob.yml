@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '* * * * *' # every day at 13:50 check crontab.guru
+    - cron: '1 * * * *' # every day at 13:50 check crontab.guru
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: '3.8'
       
       - name: Install dependencies
         run: |

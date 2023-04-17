@@ -1,6 +1,8 @@
 name: run main.py
 
 on:
+  push:
+    branches: pypetter-workflow-test
   schedule:
     - cron: '* * * * *' # every day at 13:50 check crontab.guru
 

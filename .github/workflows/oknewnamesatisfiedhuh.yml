@@ -24,28 +24,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Install pypeteer browser #maybe store as artifacts
-        run: pyppeteer-install
+      - name: Install pypeteer browser
+        run: |
+          pip install pyppeteer
+          python -m pyppeteer-install
+
+      - name: Upload pypeteer package as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: pypeteer
+          path: ${{ env.PYPPETEER_HOME }}
       
       - name: Run main.py
-        # env:
-        #   SLCM_USERNAME: ${{ secrets.SLCM_USERNAME }}
-        #   SLCM_PASSWORD: ${{ secrets.SLCM_PASSWORD }}
-        #   INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
-        #   INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
+        env:
+          PYPPETEER_HOME: ${{ env.PYPPETEER_HOME }}
         run: python -u src/main.py
-      
-      - name: commit files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
-          
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          # branch: main 
-          # branch: master
-          branch: ${{ github.ref }}

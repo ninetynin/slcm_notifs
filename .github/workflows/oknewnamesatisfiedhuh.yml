@@ -40,7 +40,7 @@ jobs:
       #     if-no-files-found: warn
       
       - name: Run main.py
-        env:
+          #env:
           # SLCM_USERNAME: ${{ secrets.SLCM_USERNAME }}
           # SLCM_PASSWORD: ${{ secrets.SLCM_PASSWORD }}
           # INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}

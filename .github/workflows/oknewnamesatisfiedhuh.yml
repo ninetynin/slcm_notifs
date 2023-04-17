@@ -27,7 +27,7 @@ jobs:
       - name: Install pypeteer browser
         run: |
           pip install pyppeteer
-          python -m pyppeteer-install
+          pyppeteer-install
 
       - name: Upload pypeteer package as artifact
         uses: actions/upload-artifact@v2

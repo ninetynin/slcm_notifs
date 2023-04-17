@@ -27,15 +27,34 @@ jobs:
       - name: Install pypeteer browser
         run: |
           pip install pyppeteer
-          pyppeteer-install
-
+          PPTR_PATH=$(python -c "import pyppeteer; print(pyppeteer.__path__[0])")
+          echo "::set-output name=pypeteer_path::$PPTR_PATH"
+          python -m pyppeteer-install
+      
       - name: Upload pypeteer package as artifact
         uses: actions/upload-artifact@v2
         with:
           name: pypeteer
-          path: ${{ env.PYPPETEER_HOME }}
+          path: ${{ steps.install_pypeteer_browser.outputs.pypeteer_path }}
+          if-no-files-found: warn
       
       - name: Run main.py
         env:
-          PYPPETEER_HOME: ${{ env.PYPPETEER_HOME }}
+          SLCM_USERNAME: ${{ secrets.SLCM_USERNAME }}
+          SLCM_PASSWORD: ${{ secrets.SLCM_PASSWORD }}
+          INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
+          INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
         run: python -u src/main.py
+      
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+          
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

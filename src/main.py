@@ -1,4 +1,5 @@
 import os
-import asyncio`
+import asyncio
 
-`
+def main():
+    print("Hello World")

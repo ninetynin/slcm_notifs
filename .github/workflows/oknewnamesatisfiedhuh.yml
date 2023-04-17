@@ -32,19 +32,19 @@ jobs:
           echo "::set-output name=pypeteer_path::$PPTR_PATH"
           pyppeteer-install
       
-      - name: Upload pypeteer package as artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: pypeteer
-          path: ${{ steps.install_pypeteer_browser.outputs.pypeteer_path }}
-          if-no-files-found: warn
+      # - name: Upload pypeteer package as artifact
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: pypeteer
+      #     path: ${{ steps.install_pypeteer_browser.outputs.pypeteer_path }}
+      #     if-no-files-found: warn
       
       - name: Run main.py
         env:
-          SLCM_USERNAME: ${{ secrets.SLCM_USERNAME }}
-          SLCM_PASSWORD: ${{ secrets.SLCM_PASSWORD }}
-          INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
-          INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
+          # SLCM_USERNAME: ${{ secrets.SLCM_USERNAME }}
+          # SLCM_PASSWORD: ${{ secrets.SLCM_PASSWORD }}
+          # INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
+          # INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
         run: python -u src/main.py
       
       - name: commit files

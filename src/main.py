@@ -7,7 +7,7 @@ print("entered into script")
 async def main():
     print("entered main fn")
     # browser = await launch(headless=False)
-    browser = await launch(headless=True) # headless mode
+    browser = await launch(headless=False)
     print("browser launched")
     page = await browser.newPage()
     print("new page created")

@@ -1,3 +1,4 @@
-pyppeteer==1.0.2
+# pyppeteer==1.0.2
 asyncio
 requests
+pyppeteer2

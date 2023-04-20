@@ -27,10 +27,10 @@ jobs:
 
       - name: Install pypeteer browser
         run: |
-          pip install pyppeteer
-          PPTR_PATH=$(python -c "import pyppeteer; print(pyppeteer.__path__[0])")
+          pip install pyppeteer2
+          PPTR_PATH=$(python -c "import pyppeteer2; print(pyppeteer2.__path__[0])")
           echo "::set-output name=pypeteer_path::$PPTR_PATH"
-          pyppeteer-install
+          pyppeteer2-install
       
       - name: Upload pypeteer package as artifact
         uses: actions/upload-artifact@v2

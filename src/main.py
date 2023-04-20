@@ -19,6 +19,7 @@ async def main():
     # print("browser closed")
 
     try:
+        print("entered try block")
         page = await browser.newPage()
         print("new page created")
         await page.goto('https://slcm.manipal.edu')

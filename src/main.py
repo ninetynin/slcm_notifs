@@ -1,6 +1,6 @@
 import asyncio
 import logging
-from pyppeteer2 import launch
+from pyppeteer import launch
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)

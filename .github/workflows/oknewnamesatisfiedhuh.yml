@@ -38,6 +38,9 @@ jobs:
           name: pypeteer
           path: /home/runner/.local/share/pyppeteer/local-chromium/588429
           if-no-files-found: warn
+
+      - name: check internet connection
+        run: python -u src/internetconn.py
       
       - name: Run main.py
           #env:

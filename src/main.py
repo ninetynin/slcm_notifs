@@ -6,17 +6,8 @@ print("entered into script")
 
 async def main():
     print("entered main fn")
-    # browser = await launch(headless=False)
     browser = await launch()
     print("browser launched")
-    # page = await browser.newPage()
-    # print("new page created")
-    # await page.goto('https://slcm.manipal.edu')
-    # print("page loaded")
-    # print(await page.title())
-    # print("page title printed")
-    # await browser.close()
-    # print("browser closed")
 
     try:
         print("entered try block")
@@ -26,8 +17,6 @@ async def main():
         print("page loaded")
         print(await page.title())
         print("page title printed")
-        await browser.close()
-        print("browser closed")
         await page.waitForSelector('input[name="txtUserName"]', timeout=40000)
     except Exception as e:
         print(e)

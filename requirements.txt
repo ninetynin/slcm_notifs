@@ -2,3 +2,4 @@ playwright
 logging
 asyncio
 instagrapi
+keras_ocr

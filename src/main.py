@@ -1,26 +1,28 @@
 import asyncio
+import logging
 from pyppeteer import launch
-# from instagrapi import Client 
 
-print("entered into script")
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 async def main():
-    print("entered main fn")
-    browser = await launch()
-    print("browser launched")
-
+    logger.info('Entered main function')
     try:
-        print("entered try block")
+        logger.info('Launching browser...')
+        browser = await launch()
+        logger.info('Browser launched')
         page = await browser.newPage()
-        print("new page created")
+        logger.info('New page created')
         await page.goto('https://slcm.manipal.edu')
-        print("page loaded")
-        print(await page.title())
-        print("page title printed")
+        logger.info('Page loaded')
+        logger.info(f'Page title: {await page.title()}')
+        await browser.close()
+        logger.info('Browser closed')
         await page.waitForSelector('input[name="txtUserName"]', timeout=40000)
     except Exception as e:
-        print(e)
+        logger.error(f'Error occurred: {e}')
         await browser.close()
-        print("browser closed")
+        logger.info('Browser closed')
 
-asyncio.get_event_loop().run_until_complete(main())
+if __name__ == '__main__':
+    asyncio.get_event_loop().run_until_complete(main())

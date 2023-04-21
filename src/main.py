@@ -1,8 +1,10 @@
 import asyncio
 import logging
 from scraper.slcm_login import slcm_login
+from scraper.extract import extract
 import os
 from dotenv import load_dotenv
+from playwright.async_api import async_playwright
 
 def setup_env(env_fn):
     SLCM_USERNAME = os.getenv("SLCM_USERNAME")
@@ -29,11 +31,14 @@ async def main():
         filename='logs/logs.log'
     )
     logger = logging.getLogger(__name__)
-    logger.info("Starting main.py")
     SLCM_USERNAME, SLCM_PASSWORD = setup_env(env_fn)
     INSTA_USERNAME, INSTA_PASSWORD = setup_insta_env(env_fn)
-    logger.info("Setting up slcm_login")
-    slcm = await slcm_login(SLCM_USERNAME, SLCM_PASSWORD, logger).main()
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=False)
+        context = await browser.new_context()
+        context = await slcm_login(SLCM_USERNAME, SLCM_PASSWORD, context, logger).login()
+        context = await extract(context, logger).imp_docs_extract()
 
 if __name__ == '__main__':
-    asyncio.run(main())
+    # asyncio.run(main())
+    asyncio.get_event_loop().run_until_complete(main())

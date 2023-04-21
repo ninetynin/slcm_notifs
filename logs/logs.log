@@ -1,107 +1,161 @@
-2023-04-20 20:02:22 - __main__ - INFO - Starting main.py
-2023-04-20 20:02:22 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:02:24 - __main__ - INFO - Browser launched
-2023-04-20 20:02:25 - __main__ - INFO - New page opened
-2023-04-20 20:02:27 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176177448135521
-2023-04-20 20:05:49 - __main__ - INFO - Starting main.py
-2023-04-20 20:05:49 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:05:52 - __main__ - INFO - Browser launched
-2023-04-20 20:05:53 - __main__ - INFO - New page opened
-2023-04-20 20:05:56 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176179532817019
-2023-04-20 20:07:58 - __main__ - INFO - Starting main.py
-2023-04-20 20:07:58 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:08:01 - __main__ - INFO - Browser launched
-2023-04-20 20:08:02 - __main__ - INFO - New page opened
-2023-04-20 20:08:09 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176180864729960
-2023-04-20 20:08:31 - __main__ - INFO - Starting main.py
-2023-04-20 20:08:31 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:08:34 - __main__ - INFO - Browser launched
-2023-04-20 20:08:35 - __main__ - INFO - New page opened
-2023-04-20 20:08:42 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176181183795048
-2023-04-20 20:12:21 - __main__ - INFO - Starting main.py
-2023-04-20 20:12:21 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:12:24 - __main__ - INFO - Browser launched
-2023-04-20 20:12:24 - __main__ - INFO - New page opened
-2023-04-20 20:12:28 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176183428546372
-2023-04-20 20:15:25 - __main__ - INFO - Starting main.py
-2023-04-20 20:15:25 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:15:28 - __main__ - INFO - Browser launched
-2023-04-20 20:15:28 - __main__ - INFO - New page opened
-2023-04-20 20:15:52 - __main__ - INFO - Starting main.py
-2023-04-20 20:15:52 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:15:54 - __main__ - INFO - Browser launched
-2023-04-20 20:15:55 - __main__ - INFO - New page opened
-2023-04-20 20:16:06 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176185649680377
-2023-04-20 20:16:24 - __main__ - INFO - Starting main.py
-2023-04-20 20:16:24 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:16:26 - __main__ - INFO - Browser launched
-2023-04-20 20:16:27 - __main__ - INFO - New page opened
-2023-04-20 20:16:32 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176185908501527
-2023-04-20 20:16:33 - __main__ - INFO - Captcha saved
-2023-04-20 20:18:30 - __main__ - INFO - Starting main.py
-2023-04-20 20:18:30 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:18:33 - __main__ - INFO - Browser launched
-2023-04-20 20:18:34 - __main__ - INFO - New page opened
-2023-04-20 20:18:40 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176187186083310
-2023-04-20 20:18:41 - __main__ - INFO - Captcha saved
-2023-04-20 20:19:06 - __main__ - INFO - Starting main.py
-2023-04-20 20:19:06 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:19:09 - __main__ - INFO - Browser launched
-2023-04-20 20:19:09 - __main__ - INFO - New page opened
-2023-04-20 20:19:11 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176187492156365
-2023-04-20 20:19:11 - __main__ - INFO - Captcha saved
-2023-04-20 20:19:50 - __main__ - INFO - Starting main.py
-2023-04-20 20:19:50 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:19:53 - __main__ - INFO - Browser launched
-2023-04-20 20:19:54 - __main__ - INFO - New page opened
-2023-04-20 20:20:00 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176187984339115
-2023-04-20 20:20:01 - __main__ - INFO - Captcha saved
-2023-04-20 20:20:55 - __main__ - INFO - Starting main.py
-2023-04-20 20:20:55 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:20:58 - __main__ - INFO - Browser launched
-2023-04-20 20:20:59 - __main__ - INFO - New page opened
-2023-04-20 20:21:01 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176188586489842
-2023-04-20 20:21:02 - __main__ - INFO - Captcha saved
-2023-04-20 20:21:53 - __main__ - INFO - Starting main.py
-2023-04-20 20:21:53 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:21:57 - __main__ - INFO - Browser launched
-2023-04-20 20:21:58 - __main__ - INFO - New page opened
-2023-04-20 20:22:37 - __main__ - INFO - Starting main.py
-2023-04-20 20:22:37 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:22:41 - __main__ - INFO - Browser launched
-2023-04-20 20:22:42 - __main__ - INFO - New page opened
-2023-04-20 20:22:47 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176189650053232
-2023-04-20 20:22:48 - __main__ - INFO - Captcha saved
-2023-04-20 20:23:04 - __main__ - INFO - captcha decoded
-2023-04-20 20:25:38 - __main__ - INFO - Starting main.py
-2023-04-20 20:25:38 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:25:42 - __main__ - INFO - Browser launched
-2023-04-20 20:25:43 - __main__ - INFO - New page opened
-2023-04-20 20:25:49 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176191463809733
-2023-04-20 20:25:50 - __main__ - INFO - Captcha saved
-2023-04-20 20:26:03 - __main__ - INFO - captcha decoded
-2023-04-20 20:26:03 - __main__ - INFO - 119
-2023-04-20 20:26:59 - __main__ - INFO - Starting main.py
-2023-04-20 20:26:59 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:27:02 - __main__ - INFO - Browser launched
-2023-04-20 20:27:03 - __main__ - INFO - New page opened
-2023-04-20 20:27:11 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176192276321964
-2023-04-20 20:27:12 - __main__ - INFO - Captcha saved
-2023-04-20 20:27:27 - __main__ - INFO - captcha decoded
-2023-04-20 20:27:27 - __main__ - INFO - 463
-2023-04-20 20:28:08 - __main__ - INFO - Starting main.py
-2023-04-20 20:28:08 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:28:12 - __main__ - INFO - Browser launched
-2023-04-20 20:28:13 - __main__ - INFO - New page opened
-2023-04-20 20:28:20 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176192955540593
-2023-04-20 20:28:21 - __main__ - INFO - Captcha saved
-2023-04-20 20:28:36 - __main__ - INFO - captcha decoded
-2023-04-20 20:28:36 - __main__ - INFO - 373
-2023-04-20 20:30:12 - __main__ - INFO - Starting main.py
-2023-04-20 20:30:12 - __main__ - INFO - Setting up slcm_login
-2023-04-20 20:30:16 - __main__ - INFO - Browser launched
-2023-04-20 20:30:16 - __main__ - INFO - New page opened
-2023-04-20 20:30:19 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176194191357645
-2023-04-20 20:30:20 - __main__ - INFO - Captcha saved
-2023-04-20 20:30:34 - __main__ - INFO - captcha decoded
-2023-04-20 20:30:34 - __main__ - INFO - 643
+2023-04-21 06:23:44 - __main__ - INFO - Browser launched
+2023-04-21 06:26:52 - __main__ - INFO - Browser launched
+2023-04-21 06:26:53 - __main__ - INFO - New page opened
+2023-04-21 06:26:54 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176552089022616
+2023-04-21 06:26:54 - __main__ - INFO - Captcha saved
+2023-04-21 06:27:11 - __main__ - INFO - captcha decoded
+2023-04-21 06:27:11 - __main__ - INFO - 368
+2023-04-21 06:27:11 - __main__ - INFO - Login button clicked
+2023-04-21 06:27:12 - __main__ - INFO - New page opened
+2023-04-21 06:29:02 - __main__ - INFO - Browser launched
+2023-04-21 06:29:03 - __main__ - INFO - New page opened
+2023-04-21 06:29:03 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176553429826711
+2023-04-21 06:29:04 - __main__ - INFO - Captcha saved
+2023-04-21 06:29:17 - __main__ - INFO - captcha decoded
+2023-04-21 06:29:17 - __main__ - INFO - 075
+2023-04-21 06:29:17 - __main__ - INFO - Login button clicked
+2023-04-21 06:29:17 - __main__ - INFO - New page opened
+2023-04-21 06:30:35 - __main__ - INFO - Browser launched
+2023-04-21 06:30:35 - __main__ - INFO - New page opened
+2023-04-21 06:30:36 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176554353424709
+2023-04-21 06:30:37 - __main__ - INFO - Captcha saved
+2023-04-21 06:30:50 - __main__ - INFO - captcha decoded
+2023-04-21 06:30:50 - __main__ - INFO - 308
+2023-04-21 06:30:50 - __main__ - INFO - Login button clicked
+2023-04-21 06:30:51 - __main__ - INFO - New page opened
+2023-04-21 06:30:54 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 06:32:56 - __main__ - INFO - Browser launched
+2023-04-21 06:32:56 - __main__ - INFO - New page opened
+2023-04-21 06:32:57 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176555757821277
+2023-04-21 06:32:58 - __main__ - INFO - Captcha saved
+2023-04-21 06:33:10 - __main__ - INFO - captcha decoded
+2023-04-21 06:33:10 - __main__ - INFO - 722
+2023-04-21 06:33:11 - __main__ - INFO - Login button clicked
+2023-04-21 06:33:11 - __main__ - INFO - New page opened
+2023-04-21 06:33:13 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 06:33:44 - __main__ - INFO - Browser launched
+2023-04-21 06:33:45 - __main__ - INFO - New page opened
+2023-04-21 06:33:45 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176556237272825
+2023-04-21 06:33:46 - __main__ - INFO - Captcha saved
+2023-04-21 06:33:58 - __main__ - INFO - captcha decoded
+2023-04-21 06:33:58 - __main__ - INFO - 139
+2023-04-21 06:33:59 - __main__ - INFO - Login button clicked
+2023-04-21 06:33:59 - __main__ - INFO - New page opened
+2023-04-21 06:34:02 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 06:34:47 - __main__ - INFO - Browser launched
+2023-04-21 06:34:48 - __main__ - INFO - New page opened
+2023-04-21 06:34:49 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176556869063256
+2023-04-21 06:34:49 - __main__ - INFO - Captcha saved
+2023-04-21 06:35:02 - __main__ - INFO - captcha decoded
+2023-04-21 06:35:02 - __main__ - INFO - 872
+2023-04-21 06:35:03 - __main__ - INFO - Login button clicked
+2023-04-21 06:35:03 - __main__ - INFO - New page opened
+2023-04-21 06:35:06 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 06:37:42 - __main__ - INFO - Browser launched
+2023-04-21 06:37:42 - __main__ - INFO - New page opened
+2023-04-21 06:37:45 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176558624772382
+2023-04-21 06:37:45 - __main__ - INFO - Captcha saved
+2023-04-21 06:38:03 - __main__ - INFO - captcha decoded
+2023-04-21 06:38:03 - __main__ - INFO - 953
+2023-04-21 06:38:03 - __main__ - INFO - Login button clicked
+2023-04-21 06:38:03 - __main__ - INFO - New page opened
+2023-04-21 06:38:06 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 06:41:18 - __main__ - INFO - Browser launched
+2023-04-21 06:41:19 - __main__ - INFO - New page opened
+2023-04-21 06:41:20 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176560760290355
+2023-04-21 06:41:20 - __main__ - INFO - Captcha saved
+2023-04-21 06:41:34 - __main__ - INFO - captcha decoded
+2023-04-21 06:41:34 - __main__ - INFO - 450
+2023-04-21 06:41:34 - __main__ - INFO - Login button clicked
+2023-04-21 06:41:34 - __main__ - INFO - New page opened
+2023-04-21 06:41:38 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 06:55:47 - __main__ - INFO - Browser launched
+2023-04-21 06:55:48 - __main__ - INFO - New page opened
+2023-04-21 06:55:48 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176569458614717
+2023-04-21 06:55:49 - __main__ - INFO - Captcha saved
+2023-04-21 06:56:02 - __main__ - INFO - captcha decoded
+2023-04-21 06:56:02 - __main__ - INFO - 603
+2023-04-21 06:56:02 - __main__ - INFO - Login button clicked
+2023-04-21 06:56:02 - __main__ - INFO - New page opened
+2023-04-21 06:56:06 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 06:58:58 - __main__ - INFO - Browser launched
+2023-04-21 06:58:58 - __main__ - INFO - New page opened
+2023-04-21 06:58:59 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176571353426076
+2023-04-21 06:59:00 - __main__ - INFO - Captcha saved
+2023-04-21 06:59:14 - __main__ - INFO - captcha decoded
+2023-04-21 06:59:14 - __main__ - INFO - 743
+2023-04-21 06:59:14 - __main__ - INFO - Login button clicked
+2023-04-21 06:59:14 - __main__ - INFO - New page opened
+2023-04-21 06:59:18 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 07:02:05 - __main__ - INFO - Browser launched
+2023-04-21 07:02:06 - __main__ - INFO - New page opened
+2023-04-21 07:02:06 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176573264805415
+2023-04-21 07:02:07 - __main__ - INFO - Captcha saved
+2023-04-21 07:02:20 - __main__ - INFO - captcha decoded
+2023-04-21 07:02:20 - __main__ - INFO - 272
+2023-04-21 07:02:20 - __main__ - INFO - Login button clicked
+2023-04-21 07:02:20 - __main__ - INFO - New page opened
+2023-04-21 07:02:23 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 07:03:04 - __main__ - INFO - Browser launched
+2023-04-21 07:03:05 - __main__ - INFO - New page opened
+2023-04-21 07:03:06 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176573854530323
+2023-04-21 07:03:07 - __main__ - INFO - Captcha saved
+2023-04-21 07:03:31 - __main__ - INFO - captcha decoded
+2023-04-21 07:03:31 - __main__ - INFO - 244
+2023-04-21 07:03:32 - __main__ - INFO - Login button clicked
+2023-04-21 07:03:32 - __main__ - INFO - New page opened
+2023-04-21 07:03:35 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 07:05:02 - __main__ - INFO - Browser launched
+2023-04-21 07:05:03 - __main__ - INFO - New page opened
+2023-04-21 07:05:03 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176575025425256
+2023-04-21 07:05:04 - __main__ - INFO - Captcha saved
+2023-04-21 07:05:17 - __main__ - INFO - captcha decoded
+2023-04-21 07:05:17 - __main__ - INFO - 372
+2023-04-21 07:05:17 - __main__ - INFO - Login button clicked
+2023-04-21 07:05:17 - __main__ - INFO - New page opened
+2023-04-21 07:05:20 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 07:06:52 - __main__ - INFO - Browser launched
+2023-04-21 07:06:53 - __main__ - INFO - New page opened
+2023-04-21 07:06:53 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176576120646146
+2023-04-21 07:06:54 - __main__ - INFO - Captcha saved
+2023-04-21 07:07:08 - __main__ - INFO - captcha decoded
+2023-04-21 07:07:08 - __main__ - INFO - 394
+2023-04-21 07:07:08 - __main__ - INFO - Login button clicked
+2023-04-21 07:07:08 - __main__ - INFO - New page opened
+2023-04-21 07:07:12 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 07:11:18 - __main__ - INFO - Browser launched
+2023-04-21 07:11:19 - __main__ - INFO - New page opened
+2023-04-21 07:11:20 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176578776892969
+2023-04-21 07:11:21 - __main__ - INFO - Captcha saved
+2023-04-21 07:11:39 - __main__ - INFO - captcha decoded
+2023-04-21 07:11:39 - __main__ - INFO - 846
+2023-04-21 07:11:40 - __main__ - INFO - Login button clicked
+2023-04-21 07:11:40 - __main__ - INFO - New page opened
+2023-04-21 07:11:44 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 07:14:40 - __main__ - INFO - Browser launched
+2023-04-21 07:14:40 - __main__ - INFO - New page opened
+2023-04-21 07:14:41 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176580781039126
+2023-04-21 07:14:42 - __main__ - INFO - Captcha saved
+2023-04-21 07:14:56 - __main__ - INFO - captcha decoded
+2023-04-21 07:14:56 - __main__ - INFO - 685
+2023-04-21 07:14:56 - __main__ - INFO - Login button clicked
+2023-04-21 07:14:57 - __main__ - INFO - New page opened
+2023-04-21 07:15:00 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 07:15:57 - __main__ - INFO - Browser launched
+2023-04-21 07:15:58 - __main__ - INFO - New page opened
+2023-04-21 07:16:00 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176581557498912
+2023-04-21 07:16:00 - __main__ - INFO - Captcha saved
+2023-04-21 07:16:24 - __main__ - INFO - captcha decoded
+2023-04-21 07:16:24 - __main__ - INFO - 128
+2023-04-21 07:16:25 - __main__ - INFO - Login button clicked
+2023-04-21 07:16:25 - __main__ - INFO - New page opened
+2023-04-21 07:16:28 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 07:24:17 - __main__ - INFO - Browser launched
+2023-04-21 07:24:17 - __main__ - INFO - New page opened
+2023-04-21 07:24:18 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176586568081774
+2023-04-21 07:24:19 - __main__ - INFO - Captcha saved
+2023-04-21 07:24:32 - __main__ - INFO - captcha decoded
+2023-04-21 07:24:32 - __main__ - INFO - 201
+2023-04-21 07:24:32 - __main__ - INFO - Login button clicked
+2023-04-21 07:24:32 - __main__ - INFO - New page opened
+2023-04-21 07:24:35 - __main__ - INFO - Navigated to Important Documents page

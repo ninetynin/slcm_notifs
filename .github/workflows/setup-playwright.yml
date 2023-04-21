@@ -40,22 +40,22 @@ jobs:
       #   run: python -u src/internetconn.py
       
       - name: Run main.py
-          #env:
-          # SLCM_USERNAME: ${{ secrets.SLCM_USERNAME }}
-          # SLCM_PASSWORD: ${{ secrets.SLCM_PASSWORD }}
-          # INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
-          # INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
+          env:
+          SLCM_USERNAME: ${{ secrets.SLCM_USERNAME }}
+          SLCM_PASSWORD: ${{ secrets.SLCM_PASSWORD }}
+          INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
+          INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
         run: python -u src/main.py
       
-      # - name: commit files
-      #   run: |
-      #     git config --local user.email "action@github.com"
-      #     git config --local user.name "GitHub Action"
-      #     git add -A
-      #     git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
           
-      # - name: push changes
-      #   uses: ad-m/github-push-action@v0.6.0
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: ${{ github.ref }}
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

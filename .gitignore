@@ -3,3 +3,4 @@ env
 GenerateCaptcha.*
 tempCodeRunnerFile.py
 session.json
+state

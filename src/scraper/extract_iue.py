@@ -1,4 +1,0 @@
-
-
-class extract_main:
-    

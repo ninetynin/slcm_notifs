@@ -22,7 +22,7 @@ def setup_insta_env(env_fn):
         exit(1)
     return INSTA_USERNAME, INSTA_PASSWORD
 
-async def main():
+async def main() -> None:
     env_fn = load_dotenv()
     logging.basicConfig(
         level=logging.INFO,
@@ -33,17 +33,26 @@ async def main():
     logger = logging.getLogger(__name__)
     SLCM_USERNAME, SLCM_PASSWORD = setup_env(env_fn)
     INSTA_USERNAME, INSTA_PASSWORD = setup_insta_env(env_fn)
+    i_list,u_list = [],[]
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=False)
-        # browser = await p.chromium.launch()
+        # browser = await p.chromium.launch(headless=False)
+        browser = await p.chromium.launch()
         context = await browser.new_context()
         context = await slcm_login(SLCM_USERNAME, SLCM_PASSWORD, context, logger).login()
-        context = await extract(context, logger).imp_docs_extract()
-        context = await extract(context, logger).uploded_docs_extract()
-
-        # await context.close()
-        # await browser.close()
-        # logger.info("Browser closed & context closed scraping complete")
+        context, i_list = await extract(context, logger).imp_docs_extract()
+        context, u_list = await extract(context, logger).uploded_docs_extract()
+        await context.close()
+        await browser.close()
+        logger.info("Browser closed & context closed scraping complete")
+    i_list = i_list[1::2]
+    logger.info("i_list: " + str(i_list))
+    u_list = u_list[1::3]
+    logger.info("u_list: " + str(u_list))
+    i_path = os.path.join(os.path.dirname(__file__), '../data/important-documents.csv')
+    new_only_i_list = extract(context, logger).set_ones_and_zeroes_csv(i_list, i_path)
+    u_path = os.path.join(os.path.dirname(__file__), '../data/uploaded-documents.csv')
+    new_only_u_list = extract(context, logger).set_ones_and_zeroes_csv(u_list, u_path)
+    logger.info("successfully updated csv files") #40sec local exec time -> if inst + assume 2min then max 3/2 times per day
 
 if __name__ == '__main__':
     # asyncio.run(main())

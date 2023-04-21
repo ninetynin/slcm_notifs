@@ -1,65 +1,141 @@
-2023-04-21 13:42:11 - __main__ - INFO - Downloading 3
-2023-04-21 13:42:11 - __main__ - INFO - Downloaded 3
-2023-04-21 13:42:12 - __main__ - INFO - saved 3
-2023-04-21 13:42:13 - __main__ - INFO - Downloading 4
-2023-04-21 13:42:13 - __main__ - INFO - Downloaded 4
-2023-04-21 13:42:14 - __main__ - INFO - saved 4
-2023-04-21 13:42:15 - __main__ - INFO - Downloading 5
-2023-04-21 13:42:15 - __main__ - INFO - Downloaded 5
-2023-04-21 13:42:16 - __main__ - INFO - saved 5
-2023-04-21 13:42:17 - __main__ - INFO - Downloading 6
-2023-04-21 13:42:17 - __main__ - INFO - Downloaded 6
-2023-04-21 13:42:18 - __main__ - INFO - saved 6
-2023-04-21 13:42:19 - __main__ - INFO - Downloading 7
-2023-04-21 13:42:19 - __main__ - INFO - Downloaded 7
-2023-04-21 13:42:20 - __main__ - INFO - saved 7
-2023-04-21 13:42:21 - __main__ - INFO - Downloading 8
-2023-04-21 13:42:21 - __main__ - INFO - Downloaded 8
-2023-04-21 13:42:21 - __main__ - INFO - saved 8
-2023-04-21 13:42:23 - __main__ - INFO - Downloading 9
-2023-04-21 13:42:23 - __main__ - INFO - Downloaded 9
-2023-04-21 13:42:24 - __main__ - INFO - saved 9
-2023-04-21 13:42:25 - __main__ - INFO - Downloading 10
-2023-04-21 13:42:25 - __main__ - INFO - Downloaded 10
-2023-04-21 13:42:25 - __main__ - INFO - saved 10
-2023-04-21 13:47:40 - __main__ - INFO - Browser launched
-2023-04-21 13:47:41 - __main__ - INFO - New page opened
-2023-04-21 13:47:41 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176816572895364
-2023-04-21 13:47:42 - __main__ - INFO - Captcha saved
-2023-04-21 13:47:58 - __main__ - INFO - captcha decoded
-2023-04-21 13:47:58 - __main__ - INFO - 132
-2023-04-21 13:47:58 - __main__ - INFO - Login button clicked
-2023-04-21 13:47:59 - __main__ - INFO - New page opened
-2023-04-21 13:48:04 - __main__ - INFO - Navigated to Important Documents page
-2023-04-21 13:48:06 - __main__ - INFO - ['1', 'Notification - Commencement of odd semester class for the academic year 2023-24', '2', 'Notification - Attention: All students', '3', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', '4', 'Graduate studies in Canada and Carleton University', '5', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', '6', 'Experience AIESEC', '7', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', '8', 'Cancellation of theory and practical classes on account of Insemester examination-2', '9', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', '10', 'OHM International Summer School OHM-ISS']
-2023-04-21 13:48:06 - __main__ - INFO - Extracted all important documents
-2023-04-21 13:48:07 - __main__ - INFO - Downloading 1
-2023-04-21 13:48:07 - __main__ - INFO - Downloaded 1,<bound method Download.path of <Download url='https://slcm.manipal.edu/ImportantDocuments.aspx' suggested_filename='AttachmentNotification-Class_Commencemen..pdf'>>
-2023-04-21 13:48:08 - __main__ - INFO - saved 1
-2023-04-21 13:48:09 - __main__ - INFO - Downloading 2
-2023-04-21 13:48:09 - __main__ - INFO - Downloaded 2,<bound method Download.path of <Download url='https://slcm.manipal.edu/ImportantDocuments.aspx' suggested_filename='AttachmentNotification_to_all_Students..pdf'>>
-2023-04-21 13:48:10 - __main__ - INFO - saved 2
-2023-04-21 13:48:11 - __main__ - INFO - Downloading 3
-2023-04-21 13:48:11 - __main__ - INFO - Downloaded 3,<bound method Download.path of <Download url='https://slcm.manipal.edu/ImportantDocuments.aspx' suggested_filename='AttachmentOpportunity_for_Students_to_vi..pdf'>>
-2023-04-21 13:48:11 - __main__ - INFO - saved 3
-2023-04-21 13:48:13 - __main__ - INFO - Downloading 4
-2023-04-21 13:48:13 - __main__ - INFO - Downloaded 4,<bound method Download.path of <Download url='https://slcm.manipal.edu/ImportantDocuments.aspx' suggested_filename='AttachmentGraduate_studies_in_Canada_and..png'>>
-2023-04-21 13:48:13 - __main__ - INFO - saved 4
-2023-04-21 13:48:14 - __main__ - INFO - Downloading 5
-2023-04-21 13:48:14 - __main__ - INFO - Downloaded 5,<bound method Download.path of <Download url='https://slcm.manipal.edu/ImportantDocuments.aspx' suggested_filename='AttachmentNotification-Cancellation_of_t..pdf'>>
-2023-04-21 13:48:15 - __main__ - INFO - saved 5
-2023-04-21 13:48:16 - __main__ - INFO - Downloading 6
-2023-04-21 13:48:16 - __main__ - INFO - Downloaded 6,<bound method Download.path of <Download url='https://slcm.manipal.edu/ImportantDocuments.aspx' suggested_filename='AttachmentExperience_AIESEC..pdf'>>
-2023-04-21 13:48:17 - __main__ - INFO - saved 6
-2023-04-21 13:48:18 - __main__ - INFO - Downloading 7
-2023-04-21 13:48:18 - __main__ - INFO - Downloaded 7,<bound method Download.path of <Download url='https://slcm.manipal.edu/ImportantDocuments.aspx' suggested_filename='AttachmentNOTICE-_Class_cancellation_dur..pdf'>>
-2023-04-21 13:48:18 - __main__ - INFO - saved 7
-2023-04-21 13:48:20 - __main__ - INFO - Downloading 8
-2023-04-21 13:48:20 - __main__ - INFO - Downloaded 8,<bound method Download.path of <Download url='https://slcm.manipal.edu/ImportantDocuments.aspx' suggested_filename='AttachmentClass_cancellation_during_Inse..pdf'>>
-2023-04-21 13:48:21 - __main__ - INFO - saved 8
-2023-04-21 13:48:22 - __main__ - INFO - Downloading 9
-2023-04-21 13:48:22 - __main__ - INFO - Downloaded 9,<bound method Download.path of <Download url='https://slcm.manipal.edu/ImportantDocuments.aspx' suggested_filename='AttachmentII_SEMESTER_B.TECH._IN-SEMESTE..pdf'>>
-2023-04-21 13:48:23 - __main__ - INFO - saved 9
-2023-04-21 13:48:25 - __main__ - INFO - Downloading 10
-2023-04-21 13:48:25 - __main__ - INFO - Downloaded 10,<bound method Download.path of <Download url='https://slcm.manipal.edu/ImportantDocuments.aspx' suggested_filename='AttachmentFlyer_OHM-ISS_compressed..pdf'>>
-2023-04-21 13:48:25 - __main__ - INFO - saved 10
+2023-04-21 16:14:21 - __main__ - INFO - Browser launched
+2023-04-21 16:14:22 - __main__ - INFO - New page opened
+2023-04-21 16:14:23 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176904604550186
+2023-04-21 16:14:24 - __main__ - INFO - Captcha saved
+2023-04-21 16:14:46 - __main__ - INFO - captcha decoded
+2023-04-21 16:14:46 - __main__ - INFO - 660
+2023-04-21 16:14:47 - __main__ - INFO - Login button clicked
+2023-04-21 16:14:51 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 16:14:53 - __main__ - INFO - ['1', 'Notification - Commencement of odd semester class for the academic year 2023-24', '2', 'Notification - Attention: All students', '3', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', '4', 'Graduate studies in Canada and Carleton University', '5', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', '6', 'Experience AIESEC', '7', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', '8', 'Cancellation of theory and practical classes on account of Insemester examination-2', '9', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', '10', 'OHM International Summer School OHM-ISS']
+2023-04-21 16:14:53 - __main__ - INFO - Extracted all important documents
+2023-04-21 16:14:54 - __main__ - INFO - Navigated to Uploaded Documents page
+2023-04-21 16:14:56 - __main__ - INFO - ['1', 'NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', '21 Mar 2023', '2', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', '15 Jun 2022', '3', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', '13 Jun 2022', '4', 'MIT HOSTEL FEE SCHEDULE', '11 Jun 2022', '5', 'MIT - 2022-23- NRI - FEE SCHEDULE', '11 Jun 2022', '6', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', '11 Jun 2022', '7', 'MIT - 2022-23-FEE NOTIFICATION']
+2023-04-21 16:16:21 - __main__ - INFO - Browser launched
+2023-04-21 16:16:22 - __main__ - INFO - New page opened
+2023-04-21 16:16:23 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176905805180992
+2023-04-21 16:16:24 - __main__ - INFO - Captcha saved
+2023-04-21 16:16:46 - __main__ - INFO - captcha decoded
+2023-04-21 16:16:46 - __main__ - INFO - 648
+2023-04-21 16:16:46 - __main__ - INFO - Login button clicked
+2023-04-21 16:16:50 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 16:16:52 - __main__ - INFO - ['1', 'Notification - Commencement of odd semester class for the academic year 2023-24', '2', 'Notification - Attention: All students', '3', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', '4', 'Graduate studies in Canada and Carleton University', '5', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', '6', 'Experience AIESEC', '7', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', '8', 'Cancellation of theory and practical classes on account of Insemester examination-2', '9', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', '10', 'OHM International Summer School OHM-ISS']
+2023-04-21 16:16:52 - __main__ - INFO - Extracted all important documents
+2023-04-21 16:16:53 - __main__ - INFO - Navigated to Uploaded Documents page
+2023-04-21 16:16:54 - __main__ - INFO - ['1', 'NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', '21 Mar 2023', '2', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', '15 Jun 2022', '3', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', '13 Jun 2022', '4', 'MIT HOSTEL FEE SCHEDULE', '11 Jun 2022', '5', 'MIT - 2022-23- NRI - FEE SCHEDULE', '11 Jun 2022', '6', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', '11 Jun 2022', '7', 'MIT - 2022-23-FEE NOTIFICATION', '11 Jun 2022', '8', 'Circular to VI sem B Tech students', '12 Jan 2022', '9', 'Message from Director, MIT', '14 Nov 2021', '10', 'Message from Director, MIT', '14 Nov 2021']
+2023-04-21 16:16:54 - __main__ - INFO - Extracted all uploaded documents
+2023-04-21 17:33:44 - __main__ - INFO - Browser launched
+2023-04-21 17:34:21 - __main__ - INFO - Browser launched
+2023-04-21 17:34:21 - __main__ - INFO - New page opened
+2023-04-21 17:34:24 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176952638636799
+2023-04-21 17:34:25 - __main__ - INFO - Captcha saved
+2023-04-21 17:34:41 - __main__ - INFO - captcha decoded
+2023-04-21 17:34:41 - __main__ - INFO - 564
+2023-04-21 17:34:41 - __main__ - INFO - Login button clicked
+2023-04-21 17:34:45 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 17:34:47 - __main__ - INFO - ['1', 'Notification - Commencement of odd semester class for the academic year 2023-24', '2', 'Notification - Attention: All students', '3', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', '4', 'Graduate studies in Canada and Carleton University', '5', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', '6', 'Experience AIESEC', '7', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', '8', 'Cancellation of theory and practical classes on account of Insemester examination-2', '9', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', '10', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:34:47 - __main__ - INFO - Extracted all important documents
+2023-04-21 17:34:48 - __main__ - INFO - Navigated to Uploaded Documents page
+2023-04-21 17:34:49 - __main__ - INFO - ['1', 'NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', '21 Mar 2023', '2', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', '15 Jun 2022', '3', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', '13 Jun 2022', '4', 'MIT HOSTEL FEE SCHEDULE', '11 Jun 2022', '5', 'MIT - 2022-23- NRI - FEE SCHEDULE', '11 Jun 2022', '6', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', '11 Jun 2022', '7', 'MIT - 2022-23-FEE NOTIFICATION', '11 Jun 2022', '8', 'Circular to VI sem B Tech students', '12 Jan 2022', '9', 'Message from Director, MIT', '14 Nov 2021', '10', 'Message from Director, MIT', '14 Nov 2021']
+2023-04-21 17:34:49 - __main__ - INFO - Extracted all uploaded documents
+2023-04-21 17:34:50 - __main__ - INFO - Browser closed & context closed scraping complete
+2023-04-21 17:34:50 - __main__ - INFO - i_list: ['Notification - Commencement of odd semester class for the academic year 2023-24', 'Notification - Attention: All students', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', 'Graduate studies in Canada and Carleton University', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', 'Experience AIESEC', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', 'Cancellation of theory and practical classes on account of Insemester examination-2', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:34:50 - __main__ - INFO - u_list: ['NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', 'MIT HOSTEL FEE SCHEDULE', 'MIT - 2022-23- NRI - FEE SCHEDULE', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', 'MIT - 2022-23-FEE NOTIFICATION', 'Circular to VI sem B Tech students', 'Message from Director, MIT', 'Message from Director, MIT']
+2023-04-21 17:38:56 - __main__ - INFO - Browser launched
+2023-04-21 17:38:57 - __main__ - INFO - New page opened
+2023-04-21 17:38:57 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176955360624390
+2023-04-21 17:38:58 - __main__ - INFO - Captcha saved
+2023-04-21 17:39:14 - __main__ - INFO - captcha decoded
+2023-04-21 17:39:14 - __main__ - INFO - 436
+2023-04-21 17:39:15 - __main__ - INFO - Login button clicked
+2023-04-21 17:39:18 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 17:39:20 - __main__ - INFO - ['1', 'Notification - Commencement of odd semester class for the academic year 2023-24', '2', 'Notification - Attention: All students', '3', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', '4', 'Graduate studies in Canada and Carleton University', '5', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', '6', 'Experience AIESEC', '7', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', '8', 'Cancellation of theory and practical classes on account of Insemester examination-2', '9', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', '10', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:39:20 - __main__ - INFO - Extracted all important documents
+2023-04-21 17:39:22 - __main__ - INFO - Navigated to Uploaded Documents page
+2023-04-21 17:39:23 - __main__ - INFO - ['1', 'NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', '21 Mar 2023', '2', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', '15 Jun 2022', '3', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', '13 Jun 2022', '4', 'MIT HOSTEL FEE SCHEDULE', '11 Jun 2022', '5', 'MIT - 2022-23- NRI - FEE SCHEDULE', '11 Jun 2022', '6', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', '11 Jun 2022', '7', 'MIT - 2022-23-FEE NOTIFICATION', '11 Jun 2022', '8', 'Circular to VI sem B Tech students', '12 Jan 2022', '9', 'Message from Director, MIT', '14 Nov 2021', '10', 'Message from Director, MIT', '14 Nov 2021']
+2023-04-21 17:39:23 - __main__ - INFO - Extracted all uploaded documents
+2023-04-21 17:39:23 - __main__ - INFO - Browser closed & context closed scraping complete
+2023-04-21 17:39:23 - __main__ - INFO - i_list: ['Notification - Commencement of odd semester class for the academic year 2023-24', 'Notification - Attention: All students', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', 'Graduate studies in Canada and Carleton University', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', 'Experience AIESEC', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', 'Cancellation of theory and practical classes on account of Insemester examination-2', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:39:23 - __main__ - INFO - u_list: ['NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', 'MIT HOSTEL FEE SCHEDULE', 'MIT - 2022-23- NRI - FEE SCHEDULE', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', 'MIT - 2022-23-FEE NOTIFICATION', 'Circular to VI sem B Tech students', 'Message from Director, MIT', 'Message from Director, MIT']
+2023-04-21 17:41:17 - __main__ - INFO - Browser launched
+2023-04-21 17:41:17 - __main__ - INFO - New page opened
+2023-04-21 17:41:18 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176956757511939
+2023-04-21 17:41:18 - __main__ - INFO - Captcha saved
+2023-04-21 17:41:34 - __main__ - INFO - captcha decoded
+2023-04-21 17:41:34 - __main__ - INFO - 263
+2023-04-21 17:41:34 - __main__ - INFO - Login button clicked
+2023-04-21 17:41:40 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 17:41:42 - __main__ - INFO - ['1', 'Notification - Commencement of odd semester class for the academic year 2023-24', '2', 'Notification - Attention: All students', '3', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', '4', 'Graduate studies in Canada and Carleton University', '5', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', '6', 'Experience AIESEC', '7', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', '8', 'Cancellation of theory and practical classes on account of Insemester examination-2', '9', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', '10', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:41:42 - __main__ - INFO - Extracted all important documents
+2023-04-21 17:41:44 - __main__ - INFO - Navigated to Uploaded Documents page
+2023-04-21 17:41:45 - __main__ - INFO - ['1', 'NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', '21 Mar 2023', '2', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', '15 Jun 2022', '3', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', '13 Jun 2022', '4', 'MIT HOSTEL FEE SCHEDULE', '11 Jun 2022', '5', 'MIT - 2022-23- NRI - FEE SCHEDULE', '11 Jun 2022', '6', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', '11 Jun 2022', '7', 'MIT - 2022-23-FEE NOTIFICATION', '11 Jun 2022', '8', 'Circular to VI sem B Tech students', '12 Jan 2022', '9', 'Message from Director, MIT', '14 Nov 2021', '10', 'Message from Director, MIT', '14 Nov 2021']
+2023-04-21 17:41:45 - __main__ - INFO - Extracted all uploaded documents
+2023-04-21 17:41:45 - __main__ - INFO - Browser closed & context closed scraping complete
+2023-04-21 17:41:45 - __main__ - INFO - i_list: ['Notification - Commencement of odd semester class for the academic year 2023-24', 'Notification - Attention: All students', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', 'Graduate studies in Canada and Carleton University', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', 'Experience AIESEC', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', 'Cancellation of theory and practical classes on account of Insemester examination-2', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:41:45 - __main__ - INFO - u_list: ['NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', 'MIT HOSTEL FEE SCHEDULE', 'MIT - 2022-23- NRI - FEE SCHEDULE', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', 'MIT - 2022-23-FEE NOTIFICATION', 'Circular to VI sem B Tech students', 'Message from Director, MIT', 'Message from Director, MIT']
+2023-04-21 17:43:50 - __main__ - INFO - Browser launched
+2023-04-21 17:43:51 - __main__ - INFO - New page opened
+2023-04-21 17:43:51 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176958291544866
+2023-04-21 17:43:52 - __main__ - INFO - Captcha saved
+2023-04-21 17:44:06 - __main__ - INFO - captcha decoded
+2023-04-21 17:44:06 - __main__ - INFO - 234
+2023-04-21 17:44:06 - __main__ - INFO - Login button clicked
+2023-04-21 17:44:09 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 17:44:11 - __main__ - INFO - ['1', 'Notification - Commencement of odd semester class for the academic year 2023-24', '2', 'Notification - Attention: All students', '3', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', '4', 'Graduate studies in Canada and Carleton University', '5', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', '6', 'Experience AIESEC', '7', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', '8', 'Cancellation of theory and practical classes on account of Insemester examination-2', '9', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', '10', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:44:11 - __main__ - INFO - Extracted all important documents
+2023-04-21 17:44:12 - __main__ - INFO - Navigated to Uploaded Documents page
+2023-04-21 17:44:13 - __main__ - INFO - ['1', 'NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', '21 Mar 2023', '2', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', '15 Jun 2022', '3', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', '13 Jun 2022', '4', 'MIT HOSTEL FEE SCHEDULE', '11 Jun 2022', '5', 'MIT - 2022-23- NRI - FEE SCHEDULE', '11 Jun 2022', '6', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', '11 Jun 2022', '7', 'MIT - 2022-23-FEE NOTIFICATION', '11 Jun 2022', '8', 'Circular to VI sem B Tech students', '12 Jan 2022', '9', 'Message from Director, MIT', '14 Nov 2021', '10', 'Message from Director, MIT', '14 Nov 2021']
+2023-04-21 17:44:13 - __main__ - INFO - Extracted all uploaded documents
+2023-04-21 17:44:13 - __main__ - INFO - Browser closed & context closed scraping complete
+2023-04-21 17:44:13 - __main__ - INFO - i_list: ['Notification - Commencement of odd semester class for the academic year 2023-24', 'Notification - Attention: All students', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', 'Graduate studies in Canada and Carleton University', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', 'Experience AIESEC', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', 'Cancellation of theory and practical classes on account of Insemester examination-2', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:44:13 - __main__ - INFO - u_list: ['NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', 'MIT HOSTEL FEE SCHEDULE', 'MIT - 2022-23- NRI - FEE SCHEDULE', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', 'MIT - 2022-23-FEE NOTIFICATION', 'Circular to VI sem B Tech students', 'Message from Director, MIT', 'Message from Director, MIT']
+2023-04-21 17:45:45 - __main__ - INFO - Browser launched
+2023-04-21 17:45:45 - __main__ - INFO - New page opened
+2023-04-21 17:45:46 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176959431193842
+2023-04-21 17:45:46 - __main__ - INFO - Captcha saved
+2023-04-21 17:45:59 - __main__ - INFO - captcha decoded
+2023-04-21 17:45:59 - __main__ - INFO - 818
+2023-04-21 17:46:00 - __main__ - INFO - Login button clicked
+2023-04-21 17:46:03 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 17:46:04 - __main__ - INFO - ['1', 'Notification - Commencement of odd semester class for the academic year 2023-24', '2', 'Notification - Attention: All students', '3', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', '4', 'Graduate studies in Canada and Carleton University', '5', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', '6', 'Experience AIESEC', '7', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', '8', 'Cancellation of theory and practical classes on account of Insemester examination-2', '9', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', '10', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:46:04 - __main__ - INFO - Extracted all important documents
+2023-04-21 17:46:05 - __main__ - INFO - Navigated to Uploaded Documents page
+2023-04-21 17:46:06 - __main__ - INFO - ['1', 'NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', '21 Mar 2023', '2', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', '15 Jun 2022', '3', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', '13 Jun 2022', '4', 'MIT HOSTEL FEE SCHEDULE', '11 Jun 2022', '5', 'MIT - 2022-23- NRI - FEE SCHEDULE', '11 Jun 2022', '6', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', '11 Jun 2022', '7', 'MIT - 2022-23-FEE NOTIFICATION', '11 Jun 2022', '8', 'Circular to VI sem B Tech students', '12 Jan 2022', '9', 'Message from Director, MIT', '14 Nov 2021', '10', 'Message from Director, MIT', '14 Nov 2021']
+2023-04-21 17:46:06 - __main__ - INFO - Extracted all uploaded documents
+2023-04-21 17:46:06 - __main__ - INFO - Browser closed & context closed scraping complete
+2023-04-21 17:46:06 - __main__ - INFO - i_list: ['Notification - Commencement of odd semester class for the academic year 2023-24', 'Notification - Attention: All students', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', 'Graduate studies in Canada and Carleton University', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', 'Experience AIESEC', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', 'Cancellation of theory and practical classes on account of Insemester examination-2', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:46:06 - __main__ - INFO - u_list: ['NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', 'MIT HOSTEL FEE SCHEDULE', 'MIT - 2022-23- NRI - FEE SCHEDULE', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', 'MIT - 2022-23-FEE NOTIFICATION', 'Circular to VI sem B Tech students', 'Message from Director, MIT', 'Message from Director, MIT']
+2023-04-21 17:46:06 - __main__ - INFO - successfully updated csv files
+2023-04-21 17:47:09 - __main__ - INFO - Browser launched
+2023-04-21 17:47:09 - __main__ - INFO - New page opened
+2023-04-21 17:47:10 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176960262401838
+2023-04-21 17:47:10 - __main__ - INFO - Captcha saved
+2023-04-21 17:47:23 - __main__ - INFO - captcha decoded
+2023-04-21 17:47:23 - __main__ - INFO - 793
+2023-04-21 17:47:24 - __main__ - INFO - Login button clicked
+2023-04-21 17:47:27 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 17:47:29 - __main__ - INFO - ['1', 'Notification - Commencement of odd semester class for the academic year 2023-24', '2', 'Notification - Attention: All students', '3', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', '4', 'Graduate studies in Canada and Carleton University', '5', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', '6', 'Experience AIESEC', '7', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', '8', 'Cancellation of theory and practical classes on account of Insemester examination-2', '9', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', '10', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:47:29 - __main__ - INFO - Extracted all important documents
+2023-04-21 17:47:31 - __main__ - INFO - Navigated to Uploaded Documents page
+2023-04-21 17:47:32 - __main__ - INFO - ['1', 'NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', '21 Mar 2023', '2', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', '15 Jun 2022', '3', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', '13 Jun 2022', '4', 'MIT HOSTEL FEE SCHEDULE', '11 Jun 2022', '5', 'MIT - 2022-23- NRI - FEE SCHEDULE', '11 Jun 2022', '6', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', '11 Jun 2022', '7', 'MIT - 2022-23-FEE NOTIFICATION', '11 Jun 2022', '8', 'Circular to VI sem B Tech students', '12 Jan 2022', '9', 'Message from Director, MIT', '14 Nov 2021', '10', 'Message from Director, MIT', '14 Nov 2021']
+2023-04-21 17:47:32 - __main__ - INFO - Extracted all uploaded documents
+2023-04-21 17:47:32 - __main__ - INFO - Browser closed & context closed scraping complete
+2023-04-21 17:47:32 - __main__ - INFO - i_list: ['Notification - Commencement of odd semester class for the academic year 2023-24', 'Notification - Attention: All students', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', 'Graduate studies in Canada and Carleton University', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', 'Experience AIESEC', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', 'Cancellation of theory and practical classes on account of Insemester examination-2', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:47:32 - __main__ - INFO - u_list: ['NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', 'MIT HOSTEL FEE SCHEDULE', 'MIT - 2022-23- NRI - FEE SCHEDULE', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', 'MIT - 2022-23-FEE NOTIFICATION', 'Circular to VI sem B Tech students', 'Message from Director, MIT', 'Message from Director, MIT']
+2023-04-21 17:47:32 - __main__ - INFO - successfully updated csv files
+2023-04-21 17:49:30 - __main__ - INFO - Browser launched
+2023-04-21 17:49:31 - __main__ - INFO - New page opened
+2023-04-21 17:49:31 - __main__ - INFO - Captcha url: GenerateCaptcha.aspx?638176961666676811
+2023-04-21 17:49:32 - __main__ - INFO - Captcha saved
+2023-04-21 17:49:45 - __main__ - INFO - captcha decoded
+2023-04-21 17:49:45 - __main__ - INFO - 599
+2023-04-21 17:49:45 - __main__ - INFO - Login button clicked
+2023-04-21 17:49:48 - __main__ - INFO - Navigated to Important Documents page
+2023-04-21 17:49:49 - __main__ - INFO - ['1', 'Notification - Commencement of odd semester class for the academic year 2023-24', '2', 'Notification - Attention: All students', '3', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', '4', 'Graduate studies in Canada and Carleton University', '5', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', '6', 'Experience AIESEC', '7', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', '8', 'Cancellation of theory and practical classes on account of Insemester examination-2', '9', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', '10', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:49:49 - __main__ - INFO - Extracted all important documents
+2023-04-21 17:49:51 - __main__ - INFO - Navigated to Uploaded Documents page
+2023-04-21 17:49:52 - __main__ - INFO - ['1', 'NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', '21 Mar 2023', '2', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', '15 Jun 2022', '3', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', '13 Jun 2022', '4', 'MIT HOSTEL FEE SCHEDULE', '11 Jun 2022', '5', 'MIT - 2022-23- NRI - FEE SCHEDULE', '11 Jun 2022', '6', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', '11 Jun 2022', '7', 'MIT - 2022-23-FEE NOTIFICATION', '11 Jun 2022', '8', 'Circular to VI sem B Tech students', '12 Jan 2022', '9', 'Message from Director, MIT', '14 Nov 2021', '10', 'Message from Director, MIT', '14 Nov 2021']
+2023-04-21 17:49:52 - __main__ - INFO - Extracted all uploaded documents
+2023-04-21 17:49:52 - __main__ - INFO - Browser closed & context closed scraping complete
+2023-04-21 17:49:52 - __main__ - INFO - i_list: ['Notification - Commencement of odd semester class for the academic year 2023-24', 'Notification - Attention: All students', 'Invitation- Opportunity for Students to virtually meet and interact with Australia & Canada Universities', 'Graduate studies in Canada and Carleton University', 'Notification-Cancellation of theory classes during In-sem. Exam-2( Remedial sections)', 'Experience AIESEC', 'NOTICE- Class cancellation during In-Semester Examinations 2, 21-04-2023', 'Cancellation of theory and practical classes on account of Insemester examination-2', 'II SEMESTER B.TECH. IN-SEMESTER EXAMINATION - 2 (REMEDIAL SECTIONS) TIME TABLE , APRIL 2023', 'OHM International Summer School OHM-ISS']
+2023-04-21 17:49:52 - __main__ - INFO - u_list: ['NOTICE ON SCHEDULING OF CLASSES DURING REVELS-2023', 'MIT - 2022-23 -  AICTE - FEE SCHEDULE', 'AD(A) Notification: Re-registration of III, IV semester B. Tech. Lab courses', 'MIT HOSTEL FEE SCHEDULE', 'MIT - 2022-23- NRI - FEE SCHEDULE', 'MIT - 2022-23- GENERAL- FEE SCHEDULE', 'MIT - 2022-23-FEE NOTIFICATION', 'Circular to VI sem B Tech students', 'Message from Director, MIT', 'Message from Director, MIT']
+2023-04-21 17:49:52 - __main__ - INFO - successfully updated csv files

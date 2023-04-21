@@ -35,9 +35,15 @@ async def main():
     INSTA_USERNAME, INSTA_PASSWORD = setup_insta_env(env_fn)
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
+        # browser = await p.chromium.launch()
         context = await browser.new_context()
         context = await slcm_login(SLCM_USERNAME, SLCM_PASSWORD, context, logger).login()
         context = await extract(context, logger).imp_docs_extract()
+        context = await extract(context, logger).uploded_docs_extract()
+
+        # await context.close()
+        # await browser.close()
+        # logger.info("Browser closed & context closed scraping complete")
 
 if __name__ == '__main__':
     # asyncio.run(main())

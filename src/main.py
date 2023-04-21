@@ -2,6 +2,8 @@ import asyncio
 import logging
 from scraper.slcm_login import slcm_login
 from scraper.extract import extract
+from instagram.login import InstagramClient
+from instagram.story import PostStory
 import os
 from dotenv import load_dotenv
 from playwright.async_api import async_playwright
@@ -43,7 +45,7 @@ async def main() -> None:
         context, u_list = await extract(context, logger).uploded_docs_extract()
         await context.close()
         await browser.close()
-        logger.info("Browser closed & context closed scraping complete")
+        logger.info("Browser closed & context closed, scraping complete")
     i_list = i_list[1::2]
     logger.info("i_list: " + str(i_list))
     u_list = u_list[1::3]
@@ -53,6 +55,16 @@ async def main() -> None:
     u_path = os.path.join(os.path.dirname(__file__), '../data/uploaded-documents.csv')
     new_only_u_list = extract(context, logger).set_ones_and_zeroes_csv(u_list, u_path)
     logger.info("successfully updated csv files") #40sec local exec time -> if inst + assume 2min then max 3/2 times per day
+
+    Inst_Client = InstagramClient(INSTA_USERNAME, INSTA_PASSWORD).login_user()
+    logger.info("successfully logged in to instagram")
+    Inst_Client = PostStory(Inst_Client, logger).post_story(new_only_i_list)
+    Inst_Client = PostStory(Inst_Client, logger).post_story(new_only_u_list)
+    logger.info("successfully posted stories to instagram")
+
+    logger.info("exiting")
+    exit(0)
+
 
 if __name__ == '__main__':
     # asyncio.run(main())

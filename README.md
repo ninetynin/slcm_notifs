@@ -1,7 +1,8 @@
 # slcm notifs
 
-THINGS TO BE FIXED:
+Setup Guide:
+1. Install dependencies from requirements.txt , after installing all dependencies make sure to install headless browsers using `playwright install`
+2. Setup .env similar to .env.example
+3. run the main.py file and you are good to go
 
-1. Session.json support for instagram imp-level:2
-2. fix github action page not opening issue(working in local) imp-lvel:3
-3. support event-calender & other supported docs + download option using github/other online pdf viewer to support links in story imp-lvel:1
+Currently only https://github.com/ninetynin/slcm_notifs/tree/local-cronjob branch is running in local since there are issues with git-crypt encryption with workflow.

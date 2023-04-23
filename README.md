@@ -1,6 +1,6 @@
 # slcm notifs
-
-Setup Guide:
+This is a simple script which scrapes the slcm uploaded and important document details and uploads them to instagram if any of them are not present in previously scraped data
+## Setup Guide:
 1. Install dependencies from requirements.txt , after installing all dependencies make sure to install headless browsers using `playwright install`
 2. Setup .env similar to .env.example
 3. run the main.py file and you are good to go

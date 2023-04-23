@@ -67,10 +67,10 @@ async def main() -> None:
     Inst_Client = PostStory(Inst_Client, logger).post_story(new_only_u_list)
     logger.info("successfully posted stories to instagram")
 
-    subprocess.call('git add .', shell=True)
-    subprocess.call('git commit -m "automated-push"', shell=True)
-    subprocess.call('git push', shell=True)
-    #automated push only on local-cronjob branch
+    # subprocess.call('git add .', shell=True)
+    # subprocess.call('git commit -m "automated-push"', shell=True)
+    # subprocess.call('git push', shell=True)
+    # #automated push only on local-cronjob branch
 
     toaster.show_toast("SLCM Scraper", "Finished Cron Job", duration=15)
 

@@ -57,6 +57,9 @@ jobs:
           INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
         run: python -u src/main.py
 
+      - name: Logs
+        run: cat logs/logs.log
+
       # - name: git-crypt unlock/lock/status
       #   run: |
       #     git-crypt unlock

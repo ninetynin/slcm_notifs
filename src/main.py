@@ -26,6 +26,8 @@ def setup_insta_env(env_fn):
 
 async def main() -> None:
     env_fn = load_dotenv()
+    with open('logs.log', 'w') as f:
+        f.write('')
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',

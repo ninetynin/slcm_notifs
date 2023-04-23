@@ -3,4 +3,3 @@ logging
 asyncio
 instagrapi
 keras_ocr
-csv

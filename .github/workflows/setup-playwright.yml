@@ -50,10 +50,10 @@ jobs:
       
       - name: Run main.py
           env:
-          SLCM_USERNAME: ${{ secrets.SLCM_USERNAME }}
-          SLCM_PASSWORD: ${{ secrets.SLCM_PASSWORD }}
-          INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
-          INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
+            SLCM_USERNAME: ${{ secrets.SLCM_USERNAME }}
+            SLCM_PASSWORD: ${{ secrets.SLCM_PASSWORD }}
+            INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
+            INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
         run: python -u src/main.py
 
       # - name: git-crypt unlock/lock/status

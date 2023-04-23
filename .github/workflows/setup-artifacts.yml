@@ -1,0 +1,33 @@
+name: Setup Artifacts
+
+on:
+  push:
+    branches: 5-sessionjson-encryption-issue-with-github-actions
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install --upgrade pip
+          pip install playwright
+
+      - name: Install playwright browser
+        run: playwright install
+
+      - name: Upload playwright package as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: playwright
+          path: /home/runner/.cache/playwright/
+          if-no-files-found: warn

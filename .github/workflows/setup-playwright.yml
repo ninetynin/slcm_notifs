@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '* * * * *' # every day at 13:50 check crontab.guru
   push:
-    branches: killme
+    branches: 5-sessionjson-encryption-issue-with-github-actions
   
 
 jobs:
@@ -26,18 +26,27 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Install playwright browser
-        run: playwright install
-      
-      # - name: Upload pypeteer package as artifact
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: pypeteer
-      #     path: /home/runner/.local/share/pyppeteer/local-chromium/588429
-      #     if-no-files-found: warn
+      # - name: Install playwright browser
+      #   run: playwright install
 
-      # - name: check internet connection
-      #   run: python -u src/internetconn.py
+      - name: Use playwright artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: pypeteer
+          path: /home/runner/.cache/playwright/
+
+      - name: setup git-crypt
+        # uses: actions/checkout@v2
+        # uses: Flydiverny/setup-git-crypt@v1
+        # with:
+        #   git-crypt-key: ${{ secrets.GIT_CRYPT_KEY }}
+        # run: git-crypt status
+        run: sudo apt-get install git-crypt gnupg
+
+      - name: Unlock secrets
+        uses: sliteteam/github-action-git-crypt-unlock@1.2.0
+        env:
+          GIT_CRYPT_KEY: ${{ secrets.GIT_CRYPT_KEY }}
       
       - name: Run main.py
           env:
@@ -46,16 +55,26 @@ jobs:
           INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
           INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
         run: python -u src/main.py
+
+      # - name: git-crypt unlock/lock/status
+      #   run: |
+      #     git-crypt unlock
+      #     git-crypt status
+      #     git-crypt lock 
+
+      # this is just a temp commands for me to todo later on as im not working on this rn fix this when session.json expires
       
-      - name: commit files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+      # - name: commit files
+      #   run: |
+      #     git config --local user.email "action@github.com"
+      #     git config --local user.name "GitHub Action"
+      #     git add -A
+      #     git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
           
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+      # - name: push changes
+      #   uses: ad-m/github-push-action@v0.6.0
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: ${{ github.ref }}
+      
+      ##### temporarily not pushing changes because of git-crypt unlock support issues work on it later on

@@ -2,5 +2,6 @@ env
 .env
 GenerateCaptcha.*
 tempCodeRunnerFile.py
-session.json
+# session.json
 state
+git-crypt-key

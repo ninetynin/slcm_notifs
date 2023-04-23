@@ -38,12 +38,12 @@ set up git -crypt in the project repository. Run below commands to git crypt the
 
 1. `cd repo`
 2. `git-crypt init`
-3. `git-crypt export-key ./git-crypt-key-restpro`
+3. `git-crypt export-key ./git-crypt-key`
     - Save this in a central password manager - like `1password`.
 4. define which files to encrypt in `.gitattributes` files.
     - Ex: `secrets.conf filter=git-crypt diff=git-crypt`
 5. Check before committing.
-   `git-crypt status`
+   `git-crypt status` [or] `git-crypt status > git-crypt-status.txt`
 6. Ignore the key `git-crypt-key-restpro` from version control by adding it to the `.gitignore` file.
 > Ignore git crypt key (in a real production world scenario).
 > I am not ignoring it here since its an open source project and anyone who wants to clone the project would need this

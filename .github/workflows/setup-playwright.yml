@@ -2,7 +2,8 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '* 0/5 * * *' # every 5hrs
+    # - cron: '0 */6 * * *' 
+    - cron: '0 4,10,16,22 * * *' 
   push:
     branches: 5-sessionjson-encryption-issue-with-github-actions
   
@@ -49,11 +50,11 @@ jobs:
           GIT_CRYPT_KEY: ${{ secrets.GIT_CRYPT_KEY }}
       
       - name: Run main.py
-          env:
-            SLCM_USERNAME: ${{ secrets.SLCM_USERNAME }}
-            SLCM_PASSWORD: ${{ secrets.SLCM_PASSWORD }}
-            INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
-            INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
+        env:
+          SLCM_USERNAME: ${{ secrets.SLCM_USERNAME }}
+          SLCM_PASSWORD: ${{ secrets.SLCM_PASSWORD }}
+          INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
+          INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
         run: python -u src/main.py
 
       # - name: git-crypt unlock/lock/status

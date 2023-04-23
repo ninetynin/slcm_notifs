@@ -26,14 +26,14 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      # - name: Install playwright browser
-      #   run: playwright install
+      - name: Install playwright browser
+        run: playwright install
 
-      - name: Use playwright artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: pypeteer
-          path: /home/runner/.cache/playwright/
+      # - name: Use playwright artifacts
+      #   uses: actions/download-artifact@v2
+      #   with:
+      #     name: pypeteer
+      #     path: /home/runner/.cache/playwright/
 
       - name: setup git-crypt
         # uses: actions/checkout@v2

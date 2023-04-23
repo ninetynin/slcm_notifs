@@ -7,6 +7,8 @@ from instagram.story import PostStory
 import os
 from dotenv import load_dotenv
 from playwright.async_api import async_playwright
+from win10toast import ToastNotifier
+import subprocess
 
 def setup_env(env_fn):
     SLCM_USERNAME = os.getenv("SLCM_USERNAME")
@@ -25,6 +27,8 @@ def setup_insta_env(env_fn):
     return INSTA_USERNAME, INSTA_PASSWORD
 
 async def main() -> None:
+    toaster = ToastNotifier()
+    toaster.show_toast("SLCM Scraper", "Started New Cron Job", duration=15)
     env_fn = load_dotenv()
     logging.basicConfig(
         level=logging.INFO,
@@ -61,6 +65,13 @@ async def main() -> None:
     Inst_Client = PostStory(Inst_Client, logger).post_story(new_only_i_list)
     Inst_Client = PostStory(Inst_Client, logger).post_story(new_only_u_list)
     logger.info("successfully posted stories to instagram")
+
+    subprocess.call('git add .', shell=True)
+    subprocess.call('git commit -m "automated-push"', shell=True)
+    subprocess.call('git push', shell=True)
+    #automated push only on local-cronjob branch
+
+    toaster.show_toast("SLCM Scraper", "Finished Cron Job", duration=15)
 
     logger.info("exiting")
     exit(0)

@@ -4,3 +4,4 @@ asyncio
 instagrapi
 keras_ocr
 csv
+win10toast

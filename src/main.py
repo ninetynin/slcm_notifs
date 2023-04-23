@@ -26,6 +26,7 @@ def setup_insta_env(env_fn):
         exit(1)
     return INSTA_USERNAME, INSTA_PASSWORD
 
+# never switch to another branch in local repo {2nd one} as then the other main script from other branch will run
 async def main() -> None:
     toaster = ToastNotifier()
     toaster.show_toast("SLCM Scraper", "Started New Cron Job", duration=15)

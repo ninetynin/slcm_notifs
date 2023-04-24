@@ -31,11 +31,13 @@ async def main() -> None:
     toaster = ToastNotifier()
     toaster.show_toast("SLCM Scraper", "Started New Cron Job", duration=15)
     env_fn = load_dotenv()
+    path_logs = os.path.join(os.path.dirname(__file__), '../logs/logs.log')
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S',
-        filename='logs/logs.log'
+        # filename='logs/logs.log'
+        filename=path_logs
     )
     logger = logging.getLogger(__name__)
     SLCM_USERNAME, SLCM_PASSWORD = setup_env(env_fn)

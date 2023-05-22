@@ -1,3 +1,5 @@
+# SERVER IS DOWN FOR NEXT 20 DAYS
+
 # slcm notifs
 This is a simple script which scrapes the slcm uploaded and important document details and uploads them to instagram if any of them are not present in previously scraped data
 ## Setup Guide:

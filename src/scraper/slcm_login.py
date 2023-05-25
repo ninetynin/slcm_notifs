@@ -44,7 +44,7 @@ class slcm_login:
         self.logger.info("Login button clicked")
         # while True:
         #     pass
-        return self.context
+        return self.context,page
 
     # async def main(self):
     #     return await self.login()

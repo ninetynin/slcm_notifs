@@ -7,10 +7,11 @@ import csv
 #work on event calender later on
 
 class extract:
-    def __init__(self, context, logger):
+    def __init__(self, context, logger, page):
         # self.page = page
         self.logger = logger
         self.context = context
+        self.page = page
         self.loop = asyncio.get_event_loop()
 
     def set_ones_and_zeroes_csv(self,lisy,path):

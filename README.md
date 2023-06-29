@@ -1,4 +1,4 @@
-# SERVER IS DOWN FOR NEXT 20 DAYS
+### The scraping part is broken (most prolly because of the changes in source code of slcm) Im not currently working on this as I cant keep running on local due to some issues 
 
 # slcm notifs
 This is a simple script which scrapes the slcm uploaded and important document details and uploads them to instagram if any of them are not present in previously scraped data
